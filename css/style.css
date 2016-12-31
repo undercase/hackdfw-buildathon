@@ -54,6 +54,23 @@ h2 {
   font-size: 4rem;
 }
 
+.yellow-circle {
+  width: 100px;
+	height: 100px;
+  background: #F6F46A;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.green-triangle {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 50px solid #82E769;
+}
+
 #small-logo {
   max-width: 25% !important;
 }
