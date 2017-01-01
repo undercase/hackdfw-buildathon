@@ -116,10 +116,12 @@ nav ul.nav {
   border-bottom: 5px solid #00D6C9;
 }
 
-svg#curve {
-  position: fixed;
-  top: -99999px;
+svg#curve, svg.shape {
+  visibility: hidden;
   pointer-events: none;
+  position: absolute;
+  top: -13337px;
+  left: -13337px;
 }
 #shapes * {
   visibility: hidden;
@@ -128,7 +130,19 @@ svg#curve {
   top: -13337px;
   left: -13337px;
 }
-
+h2.wavy {
+  margin-bottom: 70px;
+}
+h2.wavy:after {
+  content: '';
+  width: 80px;
+  height: 20px;
+  position: absolute;
+  bottom: 40px;
+  left: 15px;
+  filter: brightness(2);
+  background: url('../img/shapes/wavy.svg') no-repeat;
+}
 
 .jumbotron {
   min-height: 100vh;
@@ -211,13 +225,19 @@ svg.curve {
 }
 
 
+#home {
+  padding-top: 100px;
+  text-align: center;
+  height: 80vw;
+  z-index: 0;
+}
 #home .background {
   position: absolute;
+  background: #9ff9e8;
   top: 0;
   left: 0;
   height: 60vw;
   width: 100%;
-  background: #9ff9e8;
   z-index: -1;
 }
 #home .background .piece {
@@ -282,11 +302,6 @@ vertical-align: bottom;
 #home .logo {
   margin-top: 40px;
   max-width: 450px;
-}
-#home {
-  padding-top: 100px;
-  text-align: center;
-  height: 80vw;
 }
 #home .title {
   font-size: 5rem;
@@ -437,6 +452,13 @@ vertical-align: bottom;
 }
 
 @media only screen and (max-width: 1000px) {
+  #home .background {
+    border-top: 300px solid #9ff9e8;
+    height: 120vw;
+  }
+  #home {
+    height: 700px;
+  }
   #home .title {
     font-size: 3rem;
     letter-spacing: 1rem;
