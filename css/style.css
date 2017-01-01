@@ -117,7 +117,6 @@ nav ul.nav {
 }
 
 svg#curve, svg.shape {
-  visibility: hidden;
   pointer-events: none;
   position: absolute;
   top: -13337px;
