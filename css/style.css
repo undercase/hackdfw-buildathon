@@ -138,11 +138,54 @@ nav ul.nav {
   min-height: 100vh;
   background: none;
 }
+#home .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60vw;
+  width: 100%;
+  background: #9ff9e8;
+  z-index: -1;
+}
+#home .background .piece {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95vw;
+  background-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+#home .background .mountain-back {
+  background-image: url('../img/header/MountainBack.png');
+  height: 55vw;
+  background-size: 100%;
+}
+#home .background .mountain-fore {
+  background-image: url('../img/header/MountainFore.png');
+  height: 35vw;
+  background-size: 100%;
+}
+#home .background .valley {
+  background-image: url('../img/header/TreeValley.png');
+  background-size: 70%;
+  height: 80vw;
+}
+#home .background .forest {
+  background-image: url('../img/header/Forest.png');
+  background-size: 120%;
+  margin-top: 15vw;
+}
+
 #home .logo {
-  margin-top: 10vh;
+  max-width: 600px;
 }
 #home {
+  padding-top: 100px;
   text-align: center;
+  height: 80vw;
 }
 #home .title {
   font-size: 5rem;
@@ -152,14 +195,10 @@ nav ul.nav {
   margin: 0;
 }
 #home .subtitle {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 #home .buttons {
   margin-top: 25px;
-}
-
-#home {
-  margin-bottom: 200px;
 }
 
 #faq .question:nth-child(even) {
