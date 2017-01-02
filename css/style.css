@@ -59,9 +59,6 @@ h3 {
   font-size: 2rem;
 }
 
-#small-logo {
-  max-width: 25% !important;
-}
 
 .btn {
   background: #000;
@@ -229,6 +226,7 @@ svg.curve {
 
 .fishtank {
   position: relative;
+  height: 400px;
 }
 
 @keyframes tailwag {
@@ -429,8 +427,10 @@ vertical-align: bottom;
   height: 60px;
 }
 #home .logo {
+  margin: auto;
   margin-top: 40px;
-  max-width: 450px;
+  max-width: 100%;
+  width: 450px;
 }
 #home .title {
   font-size: 5rem;
@@ -450,6 +450,7 @@ vertical-align: bottom;
 
 #home .buttons .btn {
   margin: 0 20px;
+  margin-bottom: 20px;
 }
 
 
@@ -602,10 +603,34 @@ footer li a {
 @media only screen and (max-width: 1000px) {
   #home .background {
     border-top: 300px solid #9ff9e8;
-    height: 120vw;
+    height: 150vw;
   }
   #home {
     height: 700px;
+    padding-top: 30px;
+  }
+  #home .edtx {
+    height: 30px;
+  }
+  .fish-square {
+    width: 150px;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  .fishtank {
+    height: 300px;
+  }
+  .fish-triangle {
+    width: 50px;
+    left: 200px;
+    margin-top: 200px;
+  }
+  .fish-triangle:after {
+      top: -6px;
+  }
+  .fish-square:after {
+      top: 30px;
   }
   #home .title {
     font-size: 3rem;
@@ -614,10 +639,15 @@ footer li a {
   }
   #contact {
   padding: 20px;
-  margin: 20px;
   }
   #faq .question {
   margin: 10px auto !important;
   float: left !important;
+  }
+  footer #social {
+    float: left !important;
+  }
+  footer li a {
+    margin: 0 5px;
   }
 }

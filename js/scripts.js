@@ -23,14 +23,18 @@ var titleAnimation = anime({
 	top: 400,
 	autoplay: false
 });
-$(window).scroll(function() {
-	if ($(window).scrollTop() <= $('#home').height()*.5) {
-		var amount = $(window).scrollTop()/150;
-		mountainBackAnimation.seek(amount);
-		mountainForeAnimation.seek(amount);
-		valleyAnimation.seek(amount);
-		// forestAnimation.seek(amount);
-		titleAnimation.seek(amount);
-	}
-	// console.log($(window).scrollTop());
-});
+if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+	$(window).scroll(function() {
+		if ($(window).scrollTop() <= $('#home').height()*.5) {
+			var amount = $(window).scrollTop()/150;
+			mountainBackAnimation.seek(amount);
+			mountainForeAnimation.seek(amount);
+			valleyAnimation.seek(amount);
+			// forestAnimation.seek(amount);
+			titleAnimation.seek(amount);
+		}
+		// console.log($(window).scrollTop());
+	});
+
+}
