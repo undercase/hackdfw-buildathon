@@ -239,6 +239,9 @@ svg.curve {
   width: 100%;
   z-index: -1;
 }
+#home .content {
+  position: relative;
+}
 #home .background .piece {
   position: absolute;
   top: 0;
@@ -252,15 +255,15 @@ svg.curve {
 }
 #home .background .mountain-back {
   background-image: url('../img/header/MountainBack.png');
-  height: 70vw;
+  height: 60vw;
   background-size: 100%;
-  left: 8vw;
+  background-position: center;
 }
 #home .background .mountain-fore {
   background-image: url('../img/header/MountainFore.png');
   height: 50vw;
   background-size: 100%;
-  left: 8vw;
+  background-position: center;
 }
 #home .background .valley {
   background-image: url('../img/header/TreeValley.png');
@@ -358,10 +361,10 @@ vertical-align: bottom;
   max-height: 120px;
   max-width: 25%;
   filter: none;
-  -webkit-filter: grayscale(100%);
-  -moz-filter:    grayscale(100%);
-  -ms-filter:     grayscale(100%);
-  -o-filter:      grayscale(100%);
+  -webkit-filter: grayscale(50%);
+  -moz-filter:    grayscale(50%);
+  -ms-filter:     grayscale(50%);
+  -o-filter:      grayscale(50%);
 }
 #sponsors .partner img {
   max-height: 150px;
