@@ -587,6 +587,18 @@ vertical-align: bottom;
   border-radius: 5px;
 }
 
+footer {
+  margin-top: 100px;
+}
+footer li {
+  float: right;
+  list-style: none;
+}
+footer li a {
+  border-bottom: none;
+  margin: 0 20px;
+}
+
 @media only screen and (max-width: 1000px) {
   #home .background {
     border-top: 300px solid #9ff9e8;
