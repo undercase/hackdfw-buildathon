@@ -33,6 +33,7 @@
 body {
   font: 14pt/1.5 sentinel;
   background: #52d2d6;
+  color: #454f63;
 }
 
 a {
@@ -76,6 +77,9 @@ h3 {
   z-index: 0;
   text-transform: uppercase;
   transition: 200ms ease-in-out;
+}
+.btn:hover {
+  background: #FFF;
 }
 
 nav.navbar {
@@ -223,6 +227,129 @@ svg.curve {
   border-radius: 100%;
 }
 
+.fishtank {
+  position: relative;
+}
+
+@keyframes tailwag {
+  0% {
+    transform: rotate(0);
+    -moz-transform: rotate(0);
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+  }
+}
+@-moz-keyframes tailwag {
+  0% {
+    transform: rotate(0);
+    -moz-transform: rotate(0);
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+  }
+}
+@-webkit-keyframes tailwag {
+  0% {
+    transform: rotate(0);
+    -moz-transform: rotate(0);
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+  }
+}
+@keyframes bob {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 10px;
+  }
+}
+@-moz-keyframes bob {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 5px;
+  }
+}
+@-webkit-keyframes bob {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 5px;
+  }
+}
+.fish-triangle {
+  background:  url('../img/fish/fishTriangle.png') no-repeat;
+  height: 100px;
+  width: 100px;
+  left: 250px;
+  margin-top: 250px;
+  transform: rotate(20deg);
+}
+.fish-square {
+  background:  url('../img/fish/fishSquare.png') no-repeat;
+  height: 200px;
+  width: 200px;
+  left: 50px;
+  transform: rotate(50deg);
+}
+.fish {
+  position: absolute;
+  background-size: contain;
+  animation: bob 1s 0s infinite alternate linear;
+  -moz-animation: bob 1s 0s infinite alternate linear;
+  -webkit-animation: bob 1s 0s infinite alternate linear;
+}
+.fish-square {
+  animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+.fish:after {
+  content: '';
+  position: absolute;
+  right: 100%;
+  top: 0;
+  border: 40px solid transparent;
+  border-left-color: #FFF;
+  border-right-width: 0;
+  transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -webkit-transform-origin: 100% 50%;
+  transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  animation: tailwag 0.1s 0s infinite alternate;
+  -moz-animation: tailwag 0.1s 0s infinite alternate;
+  -webkit-animation: tailwag 0.1s 0s infinite alternate;
+}
+.fish-triangle:after {
+  border-width: 30px;
+  border-left-color: #CC403E;
+  border-right-width: 0;
+  top: 8px;
+}
+.fish-square:after {
+  border-left-color: #81B74C;
+  top: 90px;
+  animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+
 
 #home {
   padding-top: 100px;
@@ -324,6 +451,12 @@ vertical-align: bottom;
 #home .buttons .btn {
   margin: 0 20px;
 }
+
+
+#about {
+  margin-bottom: 80px;
+}
+
 
 #faq .curve {
   fill: #30ccb6;
@@ -441,9 +574,10 @@ vertical-align: bottom;
 #contact {
   padding: 50px;
   margin-bottom: 0px;
+  background: #ffee98;
 }
-#contact h2 {
-  margin: 0;
+#contact .curve {
+  fill: #ffee98;
 }
 #contact .location {
   padding: 20px;
