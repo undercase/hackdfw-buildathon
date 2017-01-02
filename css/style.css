@@ -61,7 +61,7 @@ h3 {
 
 
 .btn {
-  background: #000;
+  background: #54b9bd;
   color: #FFF;
   padding: 15px 40px;
   font-family: brandon;
@@ -77,12 +77,13 @@ h3 {
 }
 .btn:hover {
   background: #FFF;
+  color: #54b9bd;
 }
 
 nav.navbar {
   padding: 15px 10px;
   border: none;
-  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 10%, transparent);
+  background: -webkit-linear-gradient(top, rgb(159, 249, 232) 10%, transparent)
 }
 nav ul.nav {
   font: 1.2em/1 brandon;
@@ -355,6 +356,10 @@ svg.curve {
   height: 80vw;
   z-index: 0;
 }
+#home a {
+  border: none;
+  text-decoration: none;
+}
 #home .background {
   position: absolute;
   background: #9ff9e8;
@@ -495,10 +500,11 @@ vertical-align: bottom;
   max-height: 120px;
   max-width: 25%;
   filter: none;
-  -webkit-filter: grayscale(50%);
+  opacity: 0.6;
+  /*-webkit-filter: grayscale(50%);
   -moz-filter:    grayscale(50%);
   -ms-filter:     grayscale(50%);
-  -o-filter:      grayscale(50%);
+  -o-filter:      grayscale(50%);*/
 }
 #sponsors .partner img {
   max-height: 150px;
@@ -510,10 +516,10 @@ vertical-align: bottom;
 }
 #sponsors img:hover {
   filter: none;
-  -webkit-filter: grayscale(0%);
+  /*-webkit-filter: grayscale(0%);
   -moz-filter:    grayscale(0%);
   -ms-filter:     grayscale(0%);
-  -o-filter:      grayscale(0%);
+  -o-filter:      grayscale(0%);*/
   opacity: 1;
 }
 #sponsors .you {
