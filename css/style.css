@@ -1,5 +1,9 @@
 @font-face {
-    font-family: "FuturaMd";
+    font-family: "Brandon";
+    src: url("../fonts/brandon.otf");
+}
+@font-face {
+    font-family: "futuramd";
     src: url("../fonts/futuram.ttf");
 }
 
@@ -187,7 +191,7 @@ svg.curve {
 
 #home .hdfw {
   display: inline-block;
-  font-family: brandon;
+  font-family: Brandon;
   font-weight: bold;
   font-size: 18px;
   line-height: 60px;
