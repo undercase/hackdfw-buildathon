@@ -1,34 +1,4 @@
 @font-face {
-  font-family: "brandon";
-  font-weight: bold;
-  src: url("../fonts/Brandon_bld.otf");
-}
-@font-face {
-  font-family: "brandon";
-  src: url("../fonts/Brandon_reg.otf");
-}
-@font-face {
-  font-family: "Sentinel";
-  src: url("../fonts/Sentinel-Book.otf");
-}
-@font-face {
-  font-family: "Sentinel";
-  font-weight: bold;
-  src: url("../fonts/Sentinel-Bold.otf");
-}
-@font-face {
-  font-family: "Sentinel";
-  font-weight: bold;
-  src: url("../fonts/Sentinel-Bold.otf");
-}
-@font-face {
-  font-family: "Sentinel";
-  font-weight: bold;
-  font-style: italic;
-  src: url("../fonts/Sentinel-BoldItalic.otf");
-}
-
-@font-face {
     font-family: "FuturaMd";
     src: url("../fonts/futuram.ttf");
 }
@@ -59,7 +29,7 @@ a {
   font-weight: bold;
 }
 a:hover {
-  color: #555;
+  color: #fff;
   text-decoration: none;
 }
 h1,h2,h3,h4,h5,h6 {
@@ -180,10 +150,9 @@ svg.curve {
 .heading:after, .auto-heading:after {
   content: url('../img/shapes/box-mag.svg');
   position: absolute;
-  bottom: 85%;
+  top:-5px;
   width: 30%;
-  left: -55px;
-  margin-bottom: -40px;
+  left: -50px;
   z-index: -1;
 }
 
@@ -288,9 +257,6 @@ vertical-align: bottom;
   z-index: -1;
   background-image: url('../img/shapes/box-mag.svg');
 }
-#about .auto-heading:after {
- bottom: 93%;
-}
 
 #faq .curve {
   fill: #009ee1;
@@ -298,22 +264,16 @@ vertical-align: bottom;
 #faq {
   background: #009ee1;
 }
-
 #faq .question:nth-child(even) {
   margin-bottom: 40px;
+  left:-10px;
   float: left;
 }
 
 #faq .question:nth-child(odd) {
   margin-top: 40px;
+  left: 10px;
   float: right;
-}
-#faq .auto-heading:after .auto-heading:nth-child(even) {
-    margin-bottom: 80%;
-}
-
-#faq .auto-heading:after .auto-heading:nth-child(odd) {
-    margin-bottom: 70%;
 }
 
 #sponsors {
