@@ -126,7 +126,10 @@ svg#curve, svg.shape {
 }
 
 section.container {
-
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 section.water-wrapper {
@@ -184,10 +187,6 @@ svg.curve {
   z-index: -1;
 }
 #home .main {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #home .background .main-background {
