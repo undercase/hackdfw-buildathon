@@ -179,9 +179,13 @@ svg.curve {
   width: 100%;
   z-index: -1;
 }
-#home .content {
+#home .jumbotron {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 #home .background .main-background {
   background-image: url('../img/header/box-back.svg');
   height: 60vw;
@@ -222,7 +226,6 @@ vertical-align: bottom;
   margin: 5px auto;
 }
 #home .buttons {
-  margin-top: 50px;
 }
 
 #home .buttons .btn {
@@ -248,6 +251,7 @@ vertical-align: bottom;
 }
 #about .content {
   position: relative;
+
 }
 #about .background .single-box {
   position: absolute;
