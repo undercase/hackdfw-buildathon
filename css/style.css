@@ -229,6 +229,7 @@ vertical-align: bottom;
   margin: 5px auto;
 }
 #home .buttons {
+  margin-top: 10px;
 }
 
 #home .buttons .btn {
