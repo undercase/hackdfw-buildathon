@@ -19,7 +19,7 @@
 
 body {
   font: 14pt/1.5 FuturaBk;
-  background: #009ee1;
+  background: #ce10ef;
   color: #fff;
 }
 
@@ -74,7 +74,7 @@ h3 {
 nav.navbar {
   padding: 15px 10px;
   border: none;
-  background: -webkit-linear-gradient(top, rgb(0,158,225) 10%, transparent);
+  background: -webkit-linear-gradient(top, #d608cf 10%, transparent);
 }
 nav ul.nav {
   font: 1.2em/1 FuturaMd;
@@ -172,7 +172,7 @@ svg.curve {
 }
 #home .background {
   position: absolute;
-  background: #009ee1;
+  background: #ce10ef;
   top: 0;
   left: 0;
   height: 60vw;
@@ -263,10 +263,10 @@ vertical-align: bottom;
 }
 
 #faq .curve {
-  fill: #009ee1;
+  fill: #ce10ef;
 }
 #faq {
-  background: #009ee1;
+  background: #ce10ef;
 }
 #faq .question:nth-child(even) {
   margin-bottom: 40px;
@@ -366,10 +366,10 @@ vertical-align: bottom;
 
 
 #judges {
-  background: #009ee1;
+  background: #ce10ef;
 }
 #judges .curve {
-  fill: #009ee1;
+  fill: #ce10ef;
 }
 #judges img {
   height: 180px;
@@ -380,10 +380,10 @@ vertical-align: bottom;
 #contact {
   padding: 50px;
   margin-bottom: 0px;
-  background: #009ee1;
+  background: #ce10ef;
 }
 #contact .curve {
-  fill: #009ee1;
+  fill: #ce10ef;
 }
 #contact .location {
   padding: 20px;
@@ -407,7 +407,7 @@ footer li a {
 
 @media only screen and (max-width: 1000px) {
   #home .background {
-    border-top: 300px solid #009ee1;
+    border-top: 300px solid #ce10ef;
     height: 150vw;
   }
   #home {
