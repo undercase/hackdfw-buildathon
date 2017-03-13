@@ -29,12 +29,16 @@ body #sponsors,#about {
 
 a {
   border-bottom: 1px solid;
-  color: #c5007b;
+  color: #fff;
   font-weight: bold;
+
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
 }
 a:hover {
   color: #fff;
   text-decoration: none;
+  opacity: 1;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: FuturaMd;
@@ -78,7 +82,7 @@ nav.navbar {
 }
 nav ul.nav {
   font: 1.2em/1 FuturaMd;
-  color: #c5007b;
+  color: #fff;
 }
 .nav>li>a {
   padding: 8px 0;
@@ -101,7 +105,7 @@ nav ul.nav {
 .nav-pills>li.active>a:focus,
 .nav-pills>li.active>a:hover {
   background: none;
-  color: #c5007b;
+  color: #fff;
   border-bottom: 5px solid #fff;
   border-radius: 0;
 }
@@ -179,9 +183,13 @@ svg.curve {
   width: 100%;
   z-index: -1;
 }
-#home .content {
+#home .jumbotron {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 #home .background .main-background {
   background-image: url('../img/header/box-back.svg');
   height: 60vw;
@@ -218,11 +226,10 @@ vertical-align: bottom;
 }
 #home .subtitle {
   font-size: 1.5rem;
-  color: #c5007b;
+  color: #fff;
   margin: 5px auto;
 }
 #home .buttons {
-  margin-top: 50px;
 }
 
 #home .buttons .btn {
@@ -248,6 +255,7 @@ vertical-align: bottom;
 }
 #about .content {
   position: relative;
+
 }
 #about .background .single-box {
   position: absolute;
