@@ -183,8 +183,8 @@ svg.curve {
   width: 100%;
   z-index: -1;
 }
-#home .jumbotron {
-  position: relative;
+#home .main {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
